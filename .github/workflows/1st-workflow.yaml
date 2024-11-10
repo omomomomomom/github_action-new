@@ -9,3 +9,12 @@ jobs:
             - name: npm command
               run: node -v
               
+    check_version:
+        runs-on: ununtu-latest
+        steps:
+          - name: install git
+            run: |
+             sudo apt update
+             sudo apt install git
+          - name: chek the version
+            run: git --version
