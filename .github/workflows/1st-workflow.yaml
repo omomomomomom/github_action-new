@@ -11,6 +11,7 @@ jobs:
               
     check_version:
         runs-on: ubuntu-latest
+        needs: run-shell-command
         steps:
           - name: install git
             run: |
@@ -18,3 +19,9 @@ jobs:
              sudo apt install git
           - name: chek the version
             run: git --version
+    dependned-job:
+        runs-on: windows-latest
+        needs: check_version
+        steps:
+          - name: echo cmd
+            run: Write-Output "hello windows"
