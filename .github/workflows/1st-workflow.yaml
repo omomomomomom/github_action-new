@@ -10,7 +10,7 @@ jobs:
               run: node -v
               
     check_version:
-        runs-on: ununtu-latest
+        runs-on: ubuntu-latest
         steps:
           - name: install git
             run: |
