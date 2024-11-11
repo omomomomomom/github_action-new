@@ -1,5 +1,5 @@
 name: 2nd-workflow
-on: [push, pull_request]
+on: [push, pull_request,issues]
 jobs:
     checkout-branch:
         runs-on: ubuntu-latest
