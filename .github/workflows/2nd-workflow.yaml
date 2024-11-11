@@ -10,7 +10,9 @@ jobs:
         -  name: checkout
            uses: actions/checkout@v4
         -  name: list the files
-           run: ls -a
+           run: |
+            ls -a
+            pwd
     
 
 
