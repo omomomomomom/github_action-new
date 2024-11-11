@@ -9,10 +9,10 @@ jobs:
            run: echo "i am starting"
         -  name: checkout
            uses: actions/checkout@v4
-        -  name: list the files
+        -  name: git-env-var-check
            run: |
-            ls -a
-            pwd
+            echo GITHUB_SHA
+            echo GITHUB_REF
     
 
 
