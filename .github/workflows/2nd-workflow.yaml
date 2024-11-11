@@ -1,0 +1,14 @@
+name: 2nd-workflow
+on:
+    push:
+jobs:
+    checkout-branch:
+        runs-on: ubuntu-latest
+        steps:
+        -  name: echo command
+           run: echo "i am starting"
+        -  name: checkout
+           uses: actions/checkout@v4
+    
+
+
