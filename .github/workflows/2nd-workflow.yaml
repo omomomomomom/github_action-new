@@ -11,8 +11,8 @@ jobs:
            uses: actions/checkout@v4
         -  name: git-env-var-check
            run: |
-            echo GITHUB_SHA
-            echo GITHUB_REF
+            echo $GITHUB_SHA
+            echo $GITHUB_REF
     
 
 
