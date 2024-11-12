@@ -1,12 +1,14 @@
 name: 2nd-workflow
 on:
-    push:
+   push:
+     branches:
+       - master
 jobs:
     checkout-branch:
         runs-on: ubuntu-latest
         steps:
         -  name: echo command
-           run: echo "i am starting"
+           run: echo "i am starting 2"
         -  name: checkout
            uses: actions/checkout@v4
         -  name: git-env-var-check
