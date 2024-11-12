@@ -9,6 +9,6 @@ jobs:
      runs-on: ubuntu-latest
      steps:
         - name: cmd output
-        run: echo "im dependent on 2nd workflow"
+          run: echo "im dependent on 2nd workflow"
 
     
