@@ -2,7 +2,7 @@ name: 2nd-workflow
 on:
    push:
      branches:
-       - master
+       - branch-01
 jobs:
     checkout-branch:
         runs-on: ubuntu-latest
