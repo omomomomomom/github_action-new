@@ -1,0 +1,14 @@
+name: 3rd-workflow
+on:
+    workflow_run:
+      workflows: [2nd-workflow]
+      types:
+        - completed
+jobs:
+    job1:
+     runs-on: ubuntu-latest
+     steps:
+        - name: cmd output
+        run: echo "im dependent on 2nd workflow"
+
+    
