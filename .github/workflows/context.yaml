@@ -5,7 +5,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: 1sr step
-          id: 01
           run: echo "hello"
         - name: if condition
           if: ${{success()}}
