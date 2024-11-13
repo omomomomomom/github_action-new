@@ -1,0 +1,7 @@
+name: using context
+on: [push]
+jobs:
+    1st-job:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo ${{runner.os}}
