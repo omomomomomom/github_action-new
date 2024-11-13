@@ -4,4 +4,4 @@ jobs:
     job01:
         runs-on: ubuntu-latest
         steps:
-            - run: echo ${{runner}}
+            - run: echo ${{toJson(runner)}}
