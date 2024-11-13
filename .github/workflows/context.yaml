@@ -1,7 +1,12 @@
 name: using context
-on: [push]
+on: [push, pullrequest]
 jobs:
     job01:
-        runs-on: ubuntu-latest
         steps:
-            - run: echo '${{toJson(runner)}}'
+        runs-on: ubuntu-latest
+            - name: 1sr step
+              id: 01
+              run: echo "hello"
+            - name: if condition
+              if: ${{success(steps.01)}}
+              run: echo "run after 1st step"
