@@ -2,11 +2,11 @@ name: using context
 on: [push, pullrequest]
 jobs:
     job01:
-        steps:
-        runs-on: ubuntu-latest
-            - name: 1sr step
-              id: 01
-              run: echo "hello"
-            - name: if condition
-              if: ${{success(steps.01)}}
-              run: echo "run after 1st step"
+      runs-on: ubuntu-latest
+      steps:
+        - name: 1sr step
+          id: 01
+          run: echo "hello"
+        - name: if condition
+          if: ${{success(steps.01)}}
+          run: echo "run after 1st step"
