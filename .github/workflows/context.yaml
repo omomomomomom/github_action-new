@@ -8,5 +8,5 @@ jobs:
           id: 01
           run: echo "hello"
         - name: if condition
-          if: ${{success(steps.01)}}
+          if: ${{success()}}
           run: echo "run after 1st step"
