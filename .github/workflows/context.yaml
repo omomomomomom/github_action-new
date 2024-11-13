@@ -1,5 +1,5 @@
 name: using context
-on: [push, pullrequest]
+on: [push, pull_request]
 jobs:
     job01:
       runs-on: ubuntu-latest
