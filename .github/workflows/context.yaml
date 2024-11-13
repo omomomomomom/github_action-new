@@ -4,4 +4,4 @@ jobs:
     job01:
         runs-on: ubuntu-latest
         steps:
-            - run: echo ${{runner.os}}
+            - run: echo ${{runner}}
