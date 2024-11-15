@@ -15,7 +15,8 @@ jobs:
            echo "step02_env=$(date)" >> "$GITHUB_ENV"
           if: github.ref == 'refs/heads/2'
         - name: step03
-          run: sleep 05
+          run: | 
+           sleep 05
           if: always()
-          echo ${{env.step02_env}}
-          run: echo ${{github.ref}} 
+           echo ${{env.step02_env}}
+           echo ${{github.ref}} 
