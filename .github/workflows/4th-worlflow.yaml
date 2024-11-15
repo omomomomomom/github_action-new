@@ -15,6 +15,7 @@ jobs:
            echo "step02_env=$(date)" >> "$GITHUB_ENV"
         - name: step03
           run: | 
+           echo ${{env.step02_env}}
            sleep 05
           if: always()
            echo ${{env.step02_env}}
