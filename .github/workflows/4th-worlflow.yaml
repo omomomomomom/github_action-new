@@ -1,6 +1,7 @@
 name: variables scope
 on: [push]
-job01:
+jobs:
+  job01:
     runs-on: ubuntu-latest 
     env:
      env01: job01 env variable
