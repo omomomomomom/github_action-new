@@ -8,6 +8,6 @@ jobs:
     steps:
         - name: step01
           run: echo "${{env.env01}}"
-          if: github.ref == refs/heads/master
+          if: github.ref == 'refs/heads/master'
         - name: step01
           run: echo ${{github.ref}} 
