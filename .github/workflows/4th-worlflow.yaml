@@ -1,5 +1,7 @@
 name: variables scope
 on: [push]
+env:
+    job_env: job level env
 jobs:
   job01:
     runs-on: ubuntu-latest 
@@ -8,7 +10,12 @@ jobs:
     steps:
         - name: step01
           run: echo "${{env.env01}}"
+        - name: step02
+          run: |
+          echo 'step02_env =$(date)' >> '$GITHUB_ENV'
           if: github.ref == 'refs/heads/2'
-        - name: step01
+        - name: step03
+          run: sleep 05
           if: always()
+          echo ${{env.step02_env}}
           run: echo ${{github.ref}} 
