@@ -6,4 +6,4 @@ jobs:
     runs-on: ${{vars.RUNNER}}
     steps:
       - name: the name of ENV_SECRET
-        run: echo '$ENV_SECRET'
+        run: echo $secrets.ENV_SECRET
