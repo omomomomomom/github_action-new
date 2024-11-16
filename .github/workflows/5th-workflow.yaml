@@ -6,4 +6,4 @@ jobs:
     runs-on: ${{vars.RUNNER}}  
     steps:
       - name: the name of ENV_VARIABLE
-        run: echo ${{var.ENV_VARIABLE}}
+        run: echo ${{vars.ENV_VARIABLE}}
