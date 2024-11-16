@@ -14,3 +14,4 @@ jobs:
           echo "REPO_VARIABLE: $REPO_VARIABLE"
           echo ${{vars.ENV_VARIABLE}}
           echo $ENV_VARIABLE
+          echo $ENV_SECRET
