@@ -5,7 +5,7 @@ jobs:
   job01:
     runs-on: ${{vars.RUNNER}}  
     env:
-      REPO_VARIABLE == '${{vars.REPO_VARIABLE}}'
+      REPO_VARIABLE: ${{vars.REPO_VARIABLE}}
     steps:
       - name: the name of REPO_VARIABLE
         run: echo $REPO_VARIABLE
