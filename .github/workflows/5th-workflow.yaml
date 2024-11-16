@@ -1,0 +1,8 @@
+name: var and secret
+on: [push]
+
+job:
+  runs-on: ${{vars.RUNNER}}
+  step:
+    - name: the name of ENV_SECRET
+      run: echo $ENV_SECRET
