@@ -7,5 +7,5 @@ jobs:
     env:
       
     steps:
-      - name: the name of ENV_VARIABLE
-        run: echo ${{vars.ENV_VARIABLE}}
+      - name: the name of ENV_SECRET
+        run: echo ${{secrets.ENV_SECRET}}
