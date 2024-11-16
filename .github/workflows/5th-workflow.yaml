@@ -6,4 +6,4 @@ jobs:
     runs-on: ${{vars.RUNNER}}  
     steps:
       - name: the name of REPO_VARIABLE
-        run: echo ${{vars.REPO_VARIABLE}}
+        run: echo $REPO_VARIABLE
