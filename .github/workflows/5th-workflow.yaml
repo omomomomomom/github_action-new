@@ -6,7 +6,11 @@ jobs:
     runs-on: ${{vars.RUNNER}}  
     env:
       REPO_VARIABLE: ${{vars.REPO_VARIABLE}}
+      ENV_VARIABLE: ${{vars.ENV_VARIABLE}}
+    environment : prod
     steps:
       - name: the name of REPO_VARIABLE
         run: |
           echo "REPO_VARIABLE: $REPO_VARIABLE"
+          echo ${{vars.ENV_VARIABLE}}
+          echo $ENV_VARIABLE
