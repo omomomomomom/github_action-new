@@ -1,7 +1,7 @@
 name: var and secret
 on: [push]
 
-job:
+jobs:
 job01:
   runs-on: ${{vars.RUNNER}}
   step:
