@@ -4,6 +4,8 @@ on: [push]
 jobs:
   job01:
     runs-on: ${{vars.RUNNER}}
+    env:
+      
     steps:
-      - name: the name of ENV_SECRET
-        run: echo ${{secrets.ENV_SECRET}}
+      - name: the name of ENV_VARIABLE
+        run: echo ${{vars.ENV_VARIABLE}}
