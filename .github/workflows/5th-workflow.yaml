@@ -8,4 +8,5 @@ jobs:
       REPO_VARIABLE: ${{vars.REPO_VARIABLE}}
     steps:
       - name: the name of REPO_VARIABLE
-        run: echo "REPO_VARIABLE: $REPO_VARIABLE"
+        run: 
+          echo "REPO_VARIABLE: $REPO_VARIABLE"
