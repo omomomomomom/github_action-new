@@ -8,7 +8,7 @@ jobs:
         node-version: [14,15,16]
         include:
           - os: ubuntu-latest
-            node-version: [14,15,16]
+            node-version: 14
             name: ubuntu
       fail-fast: false
     runs-on: ${{ matrix.os }}
