@@ -18,7 +18,7 @@ jobs:
         if: failure() && steps.step-failure.outcome == 'failure'
         run: echo 'im running cause step02 failed'
       - name: step03
-        if: if succ steps.step1-ok.outcome == 'success'
+        if: steps.step1-ok.outcome == 'success'
         run: echo "Step 1 completed successfully!"
       - name: alway
         if: always()
