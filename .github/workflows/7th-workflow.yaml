@@ -9,7 +9,7 @@ jobs:
         include:
           - os: ubuntu-latest
             is-ubuntu: true
-        fail-fast: false
+      fail-fast: false
     runs-on: ${{ matrix.os }}
     steps:
       - name: step01
