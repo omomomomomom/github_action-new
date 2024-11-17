@@ -2,7 +2,7 @@ name: matrix-workflow
 on: [push]
 jobs:
   job01:
-    statergy:
+    strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
         node-version: [14,15,16]
