@@ -9,7 +9,7 @@ jobs:
         id: step1-ok
         run: |
           sleep 30
-          echo '${{steps.step1-ok.outcome}}'
+          echo ${{steps.step1-ok.outcome}}
         
       - name: step02
         id: step-failure
