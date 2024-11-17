@@ -6,7 +6,9 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
         node-version: [14,15,16]
-        #include:
+        include:
+          - os: ubuntu-latest
+            name: ubuntu
       fail-fast: false
     runs-on: ${{ matrix.os }}
     steps:
