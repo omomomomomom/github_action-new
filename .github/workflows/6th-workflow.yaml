@@ -8,9 +8,7 @@ jobs:
       - name: step1
         id: step1-ok
         run: |
-          sleep 30
-          echo ${{steps.step1-ok.outcome}}
-        
+          sleep 01        
       - name: step02
         id: step-failure
         run: exit 1
@@ -22,4 +20,6 @@ jobs:
         run: echo "Step 1 completed successfully!"
       - name: alway
         if: always()
-        run: echo running always
+        run: |
+          echo running always
+          echo ${{steps.step1-ok.outcome}}
