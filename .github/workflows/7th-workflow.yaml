@@ -13,6 +13,7 @@ jobs:
       - name: step01
         run: node -v
         uses: actions/setup-node@v3
-          with: ${{matrix.node-version}}
+        with: 
+          node-version: ${{matrix.node-version}}
       
 
