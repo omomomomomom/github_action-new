@@ -12,7 +12,7 @@ on: [push]
 # {os: ubuntu-latest, node-version: 17 }
 jobs:
   node-matrix:
-    continue-on-error: false
+    continue-on-error: true2
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
