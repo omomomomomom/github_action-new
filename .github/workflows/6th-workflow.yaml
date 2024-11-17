@@ -6,7 +6,8 @@ jobs:
     timeout-minutes: 1
     steps:
       - name: step1
-        run: sleep 90
+        id: step1-ok
+        run: sleep 30
       - name: step02
         id: step-failure
         run: exit 1
@@ -14,6 +15,7 @@ jobs:
         if: failure() && steps.step-failure.outcome == 'failure'
         run: echo 'im running cause step02 failed'
       - name: step03
+        if: steps.step1.ok.coutcome == 'success'
         run: echo 'run id success'
       - name: alway
         if: always()
