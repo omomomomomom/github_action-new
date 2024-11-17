@@ -8,17 +8,15 @@ jobs:
         node-version: [14,15,16]
         include:
           - os: ubuntu-latest
-            node-version: 14
-            name: ubuntu
-      fail-fast: false
+            is-ubuntu: true
+        fail-fast: false
     runs-on: ${{ matrix.os }}
     steps:
       - name: step01
-        run: |
-         node -v
-         echo ${{toJson(matrix)}}
+        run: node -v
+      - run: echo ${{toJson(matrix)}}
       - uses: actions/setup-node@v3
         with: 
-          node-version: ${{matrix.node-version}}
+          node-version: ${{ matrix.node-version }}
       
 
