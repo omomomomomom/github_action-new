@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        run: echo "Hello World"  # Fixed syntax for `run`
+        run: sleep 30 # Fixed syntax for `run`
 
 #----------------------------------------------------------------------------------
 
