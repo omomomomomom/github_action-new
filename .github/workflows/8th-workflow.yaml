@@ -7,7 +7,7 @@ on:
         required: true  # Fixed `requirement` to `required`
         type: string  # Specified the type of input
 concurrency: ${{ github.event.inputs.environment }}  # Corrected the reference for the input
-
+cancel-in-progress: true
 jobs:
   job01:
     runs-on: ubuntu-latest
