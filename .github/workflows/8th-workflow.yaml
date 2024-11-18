@@ -1,0 +1,21 @@
+name: concurrency-workflow
+on:
+  workflow_dispatch:
+    inputs:
+      environment:  # Corrected `intput` to `inputs` and fixed the structure
+        description: "Select the environment"
+        required: true  # Fixed `requirement` to `required`
+        type: string  # Specified the type of input
+concurrency: ${{ github.event.inputs.environment }}  # Corrected the reference for the input
+
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello World"  # Fixed syntax for `run`
+
+#----------------------------------------------------------------------------------
+
+
+
