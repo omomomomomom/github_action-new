@@ -1,6 +1,6 @@
 name: caching and artifacts
 on: [workflow_dispatch]
-job:
+jobs:
   runs-on: ubuntu-latest
   steps: 
     - uses: actions/checkout@v3
