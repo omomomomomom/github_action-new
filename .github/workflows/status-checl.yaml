@@ -17,6 +17,8 @@ jobs:
         # This is not needed (DEFAULT BEAHAVIOUR)
         if: success()
         run: echo 'Runs on Success'
+      - name: just to fail
+        run: exit 1
       - name: Always Runs
         # if: success() || failure()
         if: always()
