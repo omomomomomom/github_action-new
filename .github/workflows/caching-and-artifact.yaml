@@ -2,7 +2,7 @@ name: caching and artifacts
 on: [workflow_dispatch]
 jobs:
   use-axios:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v3
       - name: cache dependencs
