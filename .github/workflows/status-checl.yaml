@@ -19,6 +19,7 @@ jobs:
         run: echo 'Runs on Success'
       - name: just to fail
         run: exit 1
+        if: always()
       - name: Always Runs
         # if: success() || failure()
         if: always()
