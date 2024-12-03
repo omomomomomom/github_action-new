@@ -1,0 +1,11 @@
+name: use of docker
+jobs:
+  use of docker:
+    runs-on: ubuntu
+    container:
+      image: 23-alpine3.19
+    steps:
+      - name: runs in container
+        run: |
+          node -v
+          cat /etc/release
