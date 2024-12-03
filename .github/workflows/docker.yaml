@@ -1,7 +1,7 @@
 name: use of docker
 on: [workflow_dispatch]
 jobs:
-  use of docker:
+  use-of-docker:
     runs-on: ubuntu
     container:
       image: 23-alpine3.19
