@@ -4,7 +4,7 @@ jobs:
   use-of-docker:
     runs-on: ubuntu-latest
     container:
-      image: 23-alpine3.19
+      image: node:23-alpine3.19
     steps:
       - name: runs in container
         run: |
