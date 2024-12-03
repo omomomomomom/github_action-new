@@ -9,4 +9,4 @@ jobs:
       - name: runs in container
         run: |
           node -v
-          cat /etc/release
+          cat /etc/os-release
