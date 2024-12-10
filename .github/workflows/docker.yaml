@@ -1,12 +1,11 @@
-name: use of docker
-on: [workflow_dispatch]
+
+name: test workflow
+on: [push]
 jobs:
-  use-of-docker:
+  job 01:
     runs-on: ubuntu-latest
-    container:
-      image: node:23-alpine3.19
     steps:
-      - name: runs in container
+      - name: test actiocn 1
         run: |
-          node -v
-          cat /etc/os-release
+          echo $GITHUB_SHA
+      - uses: actions/checkoutv3
