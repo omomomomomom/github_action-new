@@ -8,4 +8,4 @@ jobs:
       - name: test actiocn 1
         run: |
           echo $GITHUB_SHA
-      - uses: actions/checkoutv3
+      - uses: actions/checkout@v3
